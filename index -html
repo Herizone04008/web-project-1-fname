@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Anime Hai</title>
 </head>
 <body>
-    <title> </title>
     <!-- 
         Name: Heritage
         Course: Web Development 10S
         Teacher: Mr. Hardman
         School: Pembina Trails Collegiate (PTC)
         Date Last Modified:
-    -->   
+    --> 
+    <h1> Hey there! Welcome to Anime Hai</h1> 
+        <p>Welcome to Anime Hai,  a fun, cool, and creative space 
+            for anime lovers!  Here, you'll explore what anime
+            is all about, discover cool shows, and see how it 
+            inspires creativity around the world. 
+        </p>
+    
 </body>
 </html>
