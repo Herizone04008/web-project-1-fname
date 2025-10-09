@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Survey Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8dc;
+            color: #333;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #772ec1;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #493cba;
+            margin-right: 15px;
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, td {
+            border: 1px solid #000;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 
+Name: Heritage
+Course: Web Development 10S
+Teacher: Mr. Hardman
+School: Pembina Trails Collegiate (PTC)
+Date Last Modified: October 7, 2025
+-->
+
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="form.html">Form</a></li>
+    <li><a href="type.html">Categories</a></li>
+</ul>
+
+<h1>Anime Survey Form</h1>
+<p>This form collects your thoughts on anime. Please fill it out honestly!</p>
+
+<form id="contact-sign-up-interests" method="get">
+
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="fName" required /><br>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="lName" required /><br>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="uName" required /><br>
+
+        <label for="telephone">Phone Number:</label>
+        <input type="tel" id="telephone" name="telNum" required /><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Sign Up</legend>
+        <label for="email-addr">Email:</label>
+        <input type="email" id="email-addr" name="email" required /><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="pWord" required /><br>
+
+        <label for="age group">Select your age group</label>
+        <select id="age-select" name="age" required>
+            <option value="under-13">Under 13</option>
+            <option value="13-18">13–18</option>
+            <option value="19-30">19–30</option>
+            <option value="31-50">31–50</option>
+            <option value="51-plus">51+</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>User Interests</legend>
+
+        <label>Hours of Anime Per Day:</label><br>
+        <input type="radio" id="1-2" name="hours" value="1-2"><label for="1-2">1-2</label><br>
+        <input type="radio" id="2-5" name="hours" value="2-5"><label for="2-5">2-5</label><br>
+        <input type="radio" id="6-10" name="hours" value="6-10"><label for="6-10">6-10</label><br>
+
+        <label>Favorite Anime Types:</label><br>
+        <input type="checkbox" id="shonen" name="fav-anime" value="shonen"><label for="shonen">Shonen</label><br>
+        <input type="checkbox" id="seinen" name="fav-anime" value="seinen"><label for="seinen">Seinen</label><br>
+        <input type="checkbox" id="action" name="fav-anime" value="action"><label for="action">Action</label><br>
+
+        <label for="added-comments">Additional Comments:</label><br>
+        <textarea id="added-comments" name="comments" rows="5" cols="40"></textarea><br>
+
+        <!-- New input type: color -->
+        <label for="fav-color">Pick your favorite color:</label>
+        <input type="color" id="fav-color" name="favColor"><br><br>
+
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+    </fieldset>
+
+</form>
+
+<!-- Table example -->
+<h2>Top 6 Popular Chinese Anime (Donghua)</h2>
+<table>
+    <tr>
+        
+<th>Anime Title</th>
+        <th>Genre</th>
+    </tr>
+    <tr>
+        <td>Throne of Seal</td>
+        <td>Fantasy / Adventure</td>
+    </tr>
+    <tr>
+        <td>Martial Universe</td>
+        <td>Action / Cultivation</td>
+    </tr>
+    <tr>
+        <td>Battle Through the Heavens</td>
+        <td>Fantasy / Martial Arts</td>
+    </tr>
+    <tr>
+        <td>Slay the Gods</td>
+        <td>Action / Mythology</td>
+    </tr>
+    <tr>
+        <td>Against the Gods</td>
+        <td>Fantasy / Power Growth</td>
+    </tr>
+    <tr>
+        <td>Legend of Xianwu</td>
+        <td>Adventure / Cultivation</td>
+    </tr>
+</table>
+
+</body>
+</html>
