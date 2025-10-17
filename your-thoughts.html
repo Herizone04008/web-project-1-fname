@@ -42,7 +42,7 @@ Date Last Modified: October 7, 2025
 
 <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="your-thoughts.html">Your Thoughts</a>
+    <li><a href="your-thoughts.html">Your Thoughts</a></li>
     <li><a href="type.html">Categories</a></li>
 </ul>
 
@@ -58,22 +58,10 @@ Date Last Modified: October 7, 2025
 
         <label for="last-name">Last Name</label>
         <input type="text" id="last-name" name="lName" required /><br>
-
-        <label for="username">Username</label>
-        <input type="text" id="username" name="uName" required /><br>
-
-        <label for="telephone">Phone Number:</label>
-        <input type="tel" id="telephone" name="telNum" required /><br>
     </fieldset>
 
     <fieldset>
-        <legend>Sign Up</legend>
-        <label for="email-addr">Email:</label>
-        <input type="email" id="email-addr" name="email" required /><br>
-
-        <label for="password">Password</label>
-        <input type="password" id="password" name="pWord" required /><br>
-
+        <legend>Age Group</legend>
         <label for="age group">Select your age group</label>
         <select id="age-select" name="age" required>
             <option value="under-13">Under 13</option>
@@ -99,12 +87,15 @@ Date Last Modified: October 7, 2025
         <input type="checkbox" id="Isekai" name="fav-anime" value="Isekai"><label for="Isekai">Isekai</label><br>
         <input type="checkbox" id="action" name="fav-anime" value="action"><label for="action">Action</label><br>
         <input type="checkbox" id="Donghua" name="fav-anime" value="Donghua"><label for="Donghua">Donghua</label><br>
-        <input type="checkbox" id="Slice of Life" name="fav-anime" value="Slice of Life"><label for="Slice of Life">Slice of Life</label><br>
-    <br>
+        <input type="checkbox" id="Slice of Life" name="fav-anime" value="Slice of Life"><label for="Slice of Life">Slice of Life</label><br><br>
+
+        <label for="anime-rating">Rate your love for anime (1–10):</label>
+        <input type="range" id="anime-rating" name="animeRating" min="1" max="10" value="5" oninput="this.nextElementSibling.value = this.value">
+        <output>5</output><br><br>
+
         <label for="added-comments">Additional Comments:</label><br>
         <textarea id="added-comments" name="comments" rows="5" cols="40"></textarea><br>
 
-        <!-- New input type: color -->
         <label for="fav-color">Pick your favorite color:</label>
         <input type="color" id="fav-color" name="favColor"><br><br>
 
@@ -114,12 +105,10 @@ Date Last Modified: October 7, 2025
 
 </form>
 
-<!-- Table example -->
 <h2>Top 6 Popular Chinese Anime (Donghua)</h2>
 <table>
     <tr>
-        
-<th>Anime Title</th>
+        <th>Anime Title</th>
         <th>Genre</th>
     </tr>
     <tr>
