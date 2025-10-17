@@ -3,39 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categories and Styles of Anime</title>
-
+    <title>Anime Survey Form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #eaddf5;
+            background-color: #e6d8f4;
             color: #333;
             margin: 20px;
         }
         h1, h2, h3 {
-            color: #a769d3;
+            color: #772ec1;
         }
         ul li a {
             text-decoration: none;
-            color: #330a5f;
+            color: #493cba;
             margin-right: 15px;
         }
         table {
             border-collapse: collapse;
             margin-top: 20px;
         }
+        table, td {
+            border: 1px solid #000;
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
-
     <header>
         <nav>
-            <!--  
-            Name: Heritage
-            Course: Web Development 10S
-            Teacher: Mr. Hardman
-            School: Pembina Trails Collegiate (PTC)
-            Date Last Modified: October 7, 2025
+            <!-- 
+                Name: Heritage
+                Course: Web Development 10S
+                Teacher: Mr. Hardman    
+                School: Pembina Trails Collegiate (PTC)
+                Date Last Modified: October 17, 2025
             -->
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -47,86 +49,121 @@
 
     <main>
         <section>
-            <h2>&#127919; My Focus &#127919;</h2>
-            <p>
-                For my website, I’ll mostly talk about anime from both Japan &#127471;&#127477; and China &#127464;&#127475;, 
-                especially the ones I love the most. &#128147;
-            </p>
+            <h1>Anime Survey Form</h1>
+            <p>This form collects your thoughts on anime. Please fill it out honestly!</p>
 
-            <p>
-                These include <b>Throne of Seal</b>, <b>Martial Universe</b>, <b>Battle Through the Heavens</b>,
-                <b>Against the Gods</b>, <b>Legend of Xianwu</b>, <b>Slay the Gods</b>, <b>Dan Da Dan</b>, 
-                <b>Spy x Family</b>, <b>Dr. Stone</b>, and <b>Gachiakuta</b>. &#127916;
-            </p>
+            <form id="contact-sign-up-interests" method="get">
 
-            <p>
-                These anime are not only my favorites, but also trending around the world &#127757;, 
-                and I want to introduce people to their amazing stories and styles. &#10024;
-            </p>
+                <!-- Fieldset for Contact Information -->
+                <fieldset>
+                    <legend>Contact Information</legend> <!-- Title for this group of inputs -->
 
-            <img src="images/Spy-x-Family.png" width="900" height="600" alt="Spy x Family" />
+                    <!-- First Name input -->
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="fName" required /><br>
 
-            <h1>&#127759; Categories and Styles of Anime</h1>
-            <p>
-                Anime comes in many styles and genres, so there’s something for everyone! 
-                Here are types of anime: &#128214;
-            </p>
+                    <!-- Last Name input -->
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="lName" required /><br>
+                </fieldset>
 
-            <ol>
-                <li>Shonen: Action-packed shows for teens, like My Hero Academia and One Piece. &#128170;</li>   
-                <li>Shojo: Romantic and emotional stories like Fruits Basket and Ouran High School Host Club. &#128151;</li>
-                <li>Seinen: More mature themes for adults, like Attack on Titan and Tokyo Ghoul. &#128293;</li>
-                <li>Isekai: Characters transported to fantasy worlds, like Sword Art Online and Re:Zero. &#127918;</li>
-                <li>Slice of Life: Everyday stories about school, friends, and life, like Clannad and Toradora. &#127968;</li>
-                <li>Sports Anime: Focuses on sports and competition. Examples include Haikyuu!! and Kuroko's Basketball. &#9917;</li>
-                <li>Danganronpa-Type (Mystery / Psychological / Survival): Involves characters 
-                    in high-stakes situations, often with elements of mystery and psychological
-                    tension. Examples include Danganronpa and Future Diary. &#128128;</li>
-                <li>Fantasy Anime: Set in magical worlds with fantastical elements. Examples 
-                    include Fullmetal Alchemist and Fairy Tail. &#127756;</li>
-                <li>Josei Anime: Realistic stories for and focus on daily life and relationships. 
-                    Examples include Nana and Paradise Kiss. &#128105;&#8205;&#127891;</li>
-                <li>Mecha Anime: Features giant robots and futuristic technology. Examples 
-                    include Gundam and Neon Genesis Evangelion. &#128640;</li>
-            </ol>
+                <!-- Fieldset for Age Selection -->
+                <fieldset>
+                    <legend>Age Group</legend> <!-- Title for this group of inputs -->
 
-            <h4>&#128293; Other Categories of Anime</h4> 
-            <p>There are many categories of anime, and each has its own unique flavor.</p>
-            <ol>
-                <li>Japanese Anime: These are the most popular and widely known 
-                    around the world. They include stories like Spy x Family,
-                    My Hero Academia, Dan Da Dan, Dr. Stone, One Punch Man, 
-                    and My Dress-Up Darling. This anime mixes humor, creativity,
-                    and adventure. &#127800;
-                </li>
-                <li>Donghua (Chinese Anime): This is another major branch of 
-                    anime that comes from China. Donghua often focuses on fantasy,
-                    cultivation, and martial arts. The art style is smooth and colorful, 
-                    and the stories are filled with power, honor, and destiny. 
-                    Some examples include: Throne of Seal, Martial Universe, 
-                    Battle Through the Heavens, Slay the Gods, Against the Gods,
-                    Legend of Xianwu &#127775; &#9876;&#65039;
-                </li>
-            </ol>
+                    <label for="age-select">Select your age group</label>
+                    <select id="age-select" name="age" required>
+                        <option value="under-13">Under 13</option>
+                        <option value="13-18">13–18</option>
+                        <option value="19-30">19–30</option>
+                        <option value="31-50">31–50</option>
+                        <option value="51-plus">51+</option>
+                    </select>
+                </fieldset>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/B7GxB0bq7h0?si=93GEZ14_bI-pBgwX" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-            </iframe>
+                <!-- Fieldset for User Interests -->
+                <fieldset>
+                    <legend>User Interests</legend> <!-- Title for this group of inputs -->
 
-            <h2>&#127912; Popular Anime Examples &#127912;</h2>
-            <p>
-                <i>Some anime powers are <sup>super</sup> strong, some items are <sub>ancient</sub>, and the fights are <b>epic</b>!  
-                Romance scenes can be emotional</i>, and boring filler episodes? <s>Skip them</s>!  
-                Don’t forget to <mark>highlight</mark> your favorite moments!
-            </p>
+                    <!-- Radio buttons for hours spent watching anime -->
+                    <label>Hours of Anime Per Day:</label><br>
+                    <input type="radio" id="1-2" name="hours" value="1-2">
+                    <label for="1-2">1-2</label><br>
+                    <input type="radio" id="2-5" name="hours" value="2-5">
+                    <label for="2-5">2-5</label><br>
+                    <input type="radio" id="6-10" name="hours" value="6-10">
+                    <label for="6-10">6-10</label><br>
 
-            <iframe width="800" height="500" src="https://www.youtube.com/embed/8JKaF9iBTGs?si=78Dtt2slleA8mQUi" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-            </iframe>
+                    <!-- Checkboxes for favorite anime types -->
+                    <label>Favorite Anime Types:</label><br>
+                    <input type="checkbox" id="Sports Anime" name="fav-anime" value="Sports Anime">
+                    <label for="Sports Anime">Sports Anime</label><br>
+                    <input type="checkbox" id="Romance" name="fav-anime" value="Romance">
+                    <label for="Romance">Romance</label><br>
+                    <input type="checkbox" id="Fantasy" name="fav-anime" value="Fantasy">
+                    <label for="Fantasy">Fantasy</label><br>
+                    <input type="checkbox" id="Isekai" name="fav-anime" value="Isekai">
+                    <label for="Isekai">Isekai</label><br>
+                    <input type="checkbox" id="action" name="fav-anime" value="action">
+                    <label for="action">Action</label><br>
+                    <input type="checkbox" id="Donghua" name="fav-anime" value="Donghua">
+                    <label for="Donghua">Donghua</label><br>
+                    <input type="checkbox" id="Slice of Life" name="fav-anime" value="Slice of Life">
+                    <label for="Slice of Life">Slice of Life</label><br><br>
+
+                    <!-- Range input for rating -->
+                    <label for="anime-rating">Rate your love for anime (1–10):</label>
+                    <input type="range" id="anime-rating" name="animeRating" min="1" max="10" value="5" 
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output>5</output><br><br>
+
+                    <!-- Textarea for additional comments -->
+                    <label for="added-comments">Additional Comments:</label><br>
+                    <textarea id="added-comments" name="comments" rows="5" cols="40"></textarea><br>
+
+                    <!-- Color picker input -->
+                    <label for="fav-color">Pick your favorite color:</label>
+                    <input type="color" id="fav-color" name="favColor"><br><br>
+
+                    <!-- Submit and Reset buttons -->
+                    <input type="submit" value="Submit Form">
+                    <input type="reset" value="Reset Form">
+                </fieldset>
+
+            </form>
+
+            <!-- Table showing popular Chinese anime -->
+            <h2>Top 6 Popular Chinese Anime (Donghua)</h2>
+            <table>
+                <tr>
+                    <th>Anime Title</th>
+                    <th>Genre</th>
+                </tr>
+                <tr>
+                    <td>Throne of Seal</td>
+                    <td>Fantasy / Adventure</td>
+                </tr>
+                <tr>
+                    <td>Martial Universe</td>
+                    <td>Action / Cultivation</td>
+                </tr>
+                <tr>
+                    <td>Battle Through the Heavens</td>
+                    <td>Fantasy / Martial Arts</td>
+                </tr>
+                <tr>
+                    <td>Slay the Gods</td>
+                    <td>Action / Mythology</td>
+                </tr>
+                <tr>
+                    <td>Against the Gods</td>
+                    <td>Fantasy / Power Growth</td>
+                </tr>
+                <tr>
+                    <td>Legend of Xianwu</td>
+                    <td>Adventure / Cultivation</td>
+                </tr>
+            </table>
         </section>
     </main>
 
